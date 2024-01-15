@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url(images/rose7it15g5b1.jpg);
+  background-size: cover;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    background-color: black;
+  }
+}
+
+.formContainer {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topTextContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url(font/BUBBS___.TTF);
+}
+
+.bigText {
+  font-family: mainFont, arial;
+  color: black;
+  font-size: 30px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.smallText {
+  padding: 10px;
+  font-family: mainFont, arial;
+  color: black;
+  font-size: 20px;
+  margin: 2px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formLayer {
+  display: flex;
+}
+.formElement {
+  margin: 25px;
+  font-family: mainFont, Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+label {
+  margin-bottom: 8px;
+}
+input {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 22px;
+}
+input:focus {
+  background-color: rgb(210, 240, 255);
+}
+
+.submitButton {
+  width: 170px;
+  height: 35px;
+  font-family: mainFont;
+  color: white;
+  background-color: rgb(30, 178, 250);
+  border: none;
+  transition: transform 0.3s;
+}
+
+.submitButton:hover {
+  transform: scale(1.1);
+}
+
+.submitButton:active {
+  background-color: rgba(30, 177, 250, 0.616);
+}
